@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}User Dashboard{% endblock %}
+
+{% block header %}Welcome to My Page{% endblock %}
+
+{% block content %}
+        <h1>User Dashboard - Insurance Management System</h1>
+        <!-- Display user's policies, account information, and links for actions -->
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='assets/scripts/app.js') }}"></script>
+{% endblock %}

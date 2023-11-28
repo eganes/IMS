@@ -1,0 +1,32 @@
+body {
+    font-family: sans-serif, 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input, button {
+    margin-bottom: 1em;
+}

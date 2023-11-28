@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Signup{% endblock %}
+
+{% block header %}Welcome to My Page{% endblock %}
+
+{% block content %}
+    <h2>Please sign up</h2>
+    <div class="signup-container">
+        <form action="/signupUser" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+    
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='assets/scripts/app.js') }}"></script>
+{% endblock %}
