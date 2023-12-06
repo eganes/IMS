@@ -111,4 +111,4 @@ class Infrastructure:
             index += 1
 
 
-Infrastructure().selector()
+# Infrastructure().selector()
