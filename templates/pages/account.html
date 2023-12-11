@@ -2,11 +2,43 @@
 
 {% block title %}User Dashboard{% endblock %}
 
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='/assets/styles/account.css') }}">        
+{% endblock %}
+
 {% block header %}{% endblock %}
 
 {% block content %}
-        <h1>Account - Insurance Management System</h1>
-        <!-- Display user's policies, account information, and links for actions -->
+<div class="account-container">
+    <h2 class="text-center">User Account</h2>
+    
+    <!-- User Information -->
+    <div class="card mb-3">
+        <div class="card-header">
+            User Information
+        </div>
+        <div class="card-body">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+        </div>
+    </div>
+
+    <!-- Policy Details -->
+    <div class="card">
+        <div class="card-header">
+            Policy Details
+        </div>
+        <div class="card-body">
+            <p><strong>Policy Number:</strong> ABC123</p>
+            <p><strong>Coverage Type:</strong> Auto Insurance</p>
+            <p><strong>Policy Start Date:</strong> January 1, 2023</p>
+            <p><strong>Policy End Date:</strong> December 31, 2023</p>
+            <p><strong>Monthly Premium:</strong> $50.00</p>
+        </div>
+    </div>
+
+</div>
 {% endblock %}
 
 {% block scripts %}

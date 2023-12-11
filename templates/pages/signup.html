@@ -5,22 +5,26 @@
 {% block header %}Welcome to My Page{% endblock %}
 
 {% block content %}
-    <h2>Please sign up</h2>
     <div class="signup-container">
-        <form action="/signupUser" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-    
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-    
-            <button type="submit">Sign Up</button>
+        <form class="signup-form" action="/signupUser" method="POST">
+            <h2 class="text-center">Signup</h2>
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" class="form-control" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Signup</button>
         </form>
     </div>
     

@@ -1,32 +1,70 @@
 body {
-    font-family: sans-serif, 'Roboto';
-    margin: 0;
-    padding: 0;
+    background-color: #f8f9fa;
 }
-
-#app {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-main {
-    padding: 2em;
-}
-
-section {
-    margin-bottom: 2em;
-}
-
-form {
+.login-container {
     display: flex;
-    flex-direction: column;
-    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    margin-bottom: 0.5em;
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.signup-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Account styling */
+.account-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+.card-body {
+    padding: 15px;
+}
+p {
+    margin-bottom: 10px;
 }
 
-input, button {
-    margin-bottom: 1em;
+/* Policies */
+.policy-card {
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
 }
+
+/* .card-title {
+    font-size: 1.2rem;
+    color: #333; /* Dark gray text color */
+} */

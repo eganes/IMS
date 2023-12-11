@@ -5,8 +5,25 @@
 {% block header %}{% endblock %}
 
 {% block content %}
-        <h1>Notifications - Insurance Management System</h1>
-        <!-- Display user's policies, account information, and links for actions -->
+<div class="mt-5">
+    <h2 class="text-center">Notifications</h2>
+
+    <div class="alert alert-success" role="alert">
+        <strong>Success!</strong> Your payment was processed successfully.
+    </div>
+
+    <div class="alert alert-info" role="alert">
+        <strong>Info:</strong> You have a new message in your inbox.
+    </div>
+
+    <div class="alert alert-warning" role="alert">
+        <strong>Warning!</strong> Your policy is expiring soon. Please renew.
+    </div>
+
+    <div class="alert alert-danger" role="alert">
+        <strong>Error!</strong> Failed to update your personal information.
+    </div>
+</div>
 {% endblock %}
 
 {% block scripts %}

@@ -5,8 +5,48 @@
 {% block header %}Welcome to My Page{% endblock %}
 
 {% block content %}
-        <h1>User Dashboard - Insurance Management System</h1>
-        <!-- Display user's policies, account information, and links for actions -->
+<div class="mt-5">
+    <h2 class="text-center">Dashboard</h2>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Total Policies
+                </div>
+                <div class="card-body">
+                    <p class="card-text">123</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Pending Claims
+                </div>
+                <div class="card-body">
+                    <p class="card-text">5</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Upcoming Renewals
+                </div>
+                <div class="card-body">
+                    <p class="card-text">10</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <!-- Add more dashboard widgets as needed -->
+    </div>
+</div>
 {% endblock %}
 
 {% block scripts %}

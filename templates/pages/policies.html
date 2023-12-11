@@ -5,8 +5,41 @@
 {% block header %}{% endblock %}
 
 {% block content %}
-        <h1>User Policies - Insurance Management System</h1>
-        <!-- Display user's policies, account information, and links for actions -->
+<div class="mt-5">
+    <h2 class="text-center">Insurance Policies</h2>
+
+    <div class="card-deck mt-4">
+        <div class="card policy-card">
+            <div class="card-header">
+                Auto Insurance
+            </div>
+            <div class="card-body">
+                <p class="card-text">Coverage for your vehicle, including liability, collision, and comprehensive coverage.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Home Insurance
+            </div>
+            <div class="card-body">
+                <p class="card-text">Protection for your home and belongings against damage, theft, and other risks.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                Health Insurance
+            </div>
+            <div class="card-body">
+                <p class="card-text">Coverage for medical expenses, hospital stays, and other health-related costs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck mt-4">
+        <!-- Add more insurance policies here as needed -->
+    </div>
 {% endblock %}
 
 {% block scripts %}
